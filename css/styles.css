@@ -48,6 +48,8 @@ link:hover {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .container {
@@ -383,11 +385,11 @@ link:hover {
 .project {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .project:not(:nth-child(3n)) {
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .project > img {
