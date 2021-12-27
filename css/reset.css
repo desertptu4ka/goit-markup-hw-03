@@ -16,6 +16,7 @@ ol {
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
 img {
