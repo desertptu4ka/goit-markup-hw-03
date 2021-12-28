@@ -25,6 +25,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: var(--text-color);
+  margin: 0;
 }
 
 .list {
@@ -87,14 +88,18 @@ link:hover {
 
 .header {
   background: var(--brend-color-3);
+  border-bottom: 1px solid #ececec;
 
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header-conteiner {
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+
+.link {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -138,15 +143,22 @@ link:hover {
   color: var(--text-description-color);
 }
 
+/* .header-item,
+.header-contacts-item {
+  display: block;
+  padding: 12px;
+} */
 /* ------- HERO ------- */
 
 .hero {
   background: var(--bg-hero);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-conteinter {
-  padding-top: calc(200px - 94px);
-  padding-bottom: calc(200px - 94px);
+  /* padding-top: calc(200px - 94px);
+  padding-bottom: calc(200px - 94px); */
 }
 
 .hero-title {
@@ -189,28 +201,30 @@ link:hover {
   background: var(--btn-hover-color);
   cursor: pointer;
 }
-/* ------- ABOUT ------- */
+/* ------- BENEFITS ------- */
 
-.about {
+.benefits {
   background-color: var(--bg-about);
+  padding-bottom: 0;
+  margin-bottom: 94px;
 }
 
-.about-list {
+.benefits-list {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto 94px auto;
 }
 
-.about-item {
+.benefits-item {
   width: 270px;
   height: 101px;
 }
 
-.about-item:nth-child(n + 2) {
+.benefits-item:nth-child(n + 2) {
   margin-left: 30px;
 }
 
-.about-item > h3 {
+.benefits-item > h3 {
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -219,12 +233,26 @@ link:hover {
   margin-bottom: 10px;
 }
 
-.about-item > p {
+.benefits-item > p {
   font-weight: normal;
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.03em;
   color: var(--text-description-color);
+}
+
+/* ------- ABOUT ------- */
+
+.about {
+  padding-top: 0;
+  background-color: var(--bg-about);
+  margin-top: 94px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 94px auto;
 }
 
 .about-woks-title {
@@ -282,15 +310,15 @@ link:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
 
+.team-cart-description {
+  text-align: center;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-item > img {
-  margin-bottom: 30px;
-}
-
-.team-item > h3 {
+.team-cart-description > h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -300,7 +328,7 @@ link:hover {
   margin-bottom: 10px;
 }
 
-.team-item > p {
+.team-cart-description > p {
   font-weight: normal;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -313,9 +341,6 @@ link:hover {
 
 .footer {
   background-color: var(--bg-footer);
-}
-
-.footer-conteinter {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -347,6 +372,11 @@ link:hover {
 
 /* ------- PORTOFOLIO ------- */
 
+.portfolio-conteinter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .filters {
   display: flex;
   justify-content: center;
@@ -360,6 +390,7 @@ link:hover {
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 
   padding: 6px 22px;
 }
@@ -383,32 +414,34 @@ link:hover {
 }
 
 .project {
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
 }
 
 .project:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
+.project:nth-last-child(n + 4) {
+  margin-bottom: 30px;
+}
+
 .project > img {
   margin-bottom: 20px;
 }
-
-.project > h3 {
+.project-cart-description {
+  margin: 20px 24px;
+}
+.project-cart-description > h3 {
   width: 322px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-
-  margin: auto;
-  margin-bottom: 4px;
 }
 
-.project > p {
+.project-cart-description > p {
   width: 322px;
 
   font-size: 16px;
